@@ -1,0 +1,26 @@
+# 确保所有文件在 Windows/Mac/Linux 间换行符一致
+* text=auto
+
+
+# 美术资源交给 LFS
+*.psd filter=lfs diff=lfs merge=lfs -text
+*.fbx filter=lfs diff=lfs merge=lfs -text
+*.ase filter=lfs diff=lfs merge=lfs -text
+*.aseprite filter=lfs diff=lfs merge=lfs -text
+*.png filter=lfs diff=lfs merge=lfs -text
+
+# 音频资源交给 LFS
+*.wav filter=lfs diff=lfs merge=lfs -text
+*.mp3 filter=lfs diff=lfs merge=lfs -text
+*.ogg filter=lfs diff=lfs merge=lfs -text
+
+# Unity 专用类交给 LFS
+*.unitypackage filter=lfs diff=lfs merge=lfs -text
+*.pdf filter=lfs diff=lfs merge=lfs -text
+Assets/**/*.spriteatlas filter=lfs diff=lfs merge=lfs -text
+
+# Unity 序列化文件（禁止 LFS，必须由 Git 追踪文本差异）
+*.meta -text
+*.unity -text
+*.asset -text
+*.prefab -text
