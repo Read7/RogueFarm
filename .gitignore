@@ -101,3 +101,9 @@ ignore.conf
 .plastic/plastic.selector
 .plastic/plastic.wktree
 .plastic/plastic.workspace
+.plastic/plastic.changes
+.gitignore
+
+# Animation files
+/Assets/M Studio
+Assets/M Studio.meta

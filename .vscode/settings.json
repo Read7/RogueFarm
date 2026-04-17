@@ -56,5 +56,6 @@
         "temp/": true,
         "Temp/": true
     },
-    "dotnet.defaultSolution": "Rogue Farm.sln"
+    "dotnet.defaultSolution": "Rogue Farm.sln",
+    "editor.inlayHints.fontSize": 18
 }
